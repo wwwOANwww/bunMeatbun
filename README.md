@@ -1,2 +1,2 @@
 # bunMeatbun
-HTML with css grid. Background strip create with css. Responsive layout
+HTML with css grid. Background stripe create with css. Responsive layout
