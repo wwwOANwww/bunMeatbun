@@ -115,12 +115,26 @@ a {
 }
 .headePrice {
   font-size: 0.5rem;
-  margin-top: 40px;
-  justify-self: end;
+  margin: 40px 10px 10px 0px;
+  justify-self: stretch;
 }
 .ingredient {
   grid-column: 1 / span 1;
   padding: 00px 15px 0px 0px;
   margin-right: 50px;
   width: 100%;
+}
+@media screen and (max-width: 700px) {
+  .container {
+    grid-template-columns: 1;
+  }
+  .menuRight-Container {
+    grid-column: 1 / span 1;
+    margin: 0px 50px;
+    padding: 0px;
+  }
+  .h1Green {
+    font-size: 1.3rem;
+    margin-top: 10px;
+  }
 }
