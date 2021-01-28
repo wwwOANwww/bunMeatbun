@@ -1,0 +1,126 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css?family=Lato|Titillium+Web&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'montserrat', sans-serif;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+body {
+  background-color: #92ce23;
+  background-image: url('/img/bg.jpg');
+  background-repeat: repeat-x;
+}
+
+a {
+  text-decoration: none;
+}
+.container {
+  margin-top: 100px;
+  margin-left: 100px;
+  width: 90%;
+  justify-items: center;
+  align-self: center;
+  display: grid;
+  grid-template-columns: 2;
+  background-image: linear-gradient(
+    180deg,
+    #2d2d2d 30%,
+    #161616 30%,
+    #161616 50%,
+    #2d2d2d 50%,
+    #2d2d2d 80%,
+    #161616 80%,
+    #161616 100%
+  );
+  background-size: 10px 10px;
+}
+.menuLeft-Container {
+  margin: 50px;
+  display: grid;
+  grid-column: 1 / span 1;
+  grid-template-columns: 1fr 50px 50px;
+}
+.menuRight-Container {
+  padding: 0px 20px;
+  margin: 50px 50px 50px 0px;
+  display: grid;
+  grid-column: 2 / span 1;
+  grid-template-columns: 1fr 50px 50px;
+  /* grid-template-columns: repeat (3, minmax(50px, auto)); */
+}
+.headmenu {
+  grid-column: 1 / span 1;
+  display: inline-grid;
+  grid-template-columns: 1fr 50px 50px;
+
+  margin-bottom: 10px;
+  /* align-items: baseline; */
+}
+.litenHead {
+  grid-column: 2 / span 1;
+  /* justify-self: end; */
+}
+.standardHead {
+  grid-column: 3 / span 1;
+  float: right;
+  /* justify-self: end; */
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: 1fr 50px 50px;
+
+  grid-column: 1 / span 3;
+  padding-bottom: 30px;
+}
+.h1Green {
+  color: #92ce23;
+  font-size: 2rem;
+  grid-column: 1 / span 1;
+  font-family: 'Varela', sans-serif;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+.menu h2 {
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+}
+
+.liten,
+.standard {
+  font-family: 'Varela', sans-serif;
+  justify-self: end;
+}
+.liten {
+  grid-column: 2 / span 1;
+  margin-right: 30px;
+  /* display: flex;
+  justify-content: center; */
+  padding: 0px;
+  font-size: 1.2rem;
+}
+.standard {
+  grid-column: 3 / span 1;
+  /* display: flex;
+  justify-content: center; */
+  padding: 0;
+  font-size: 1.2rem;
+}
+.headePrice {
+  font-size: 0.5rem;
+  margin-top: 40px;
+  justify-self: end;
+}
+.ingredient {
+  grid-column: 1 / span 1;
+  padding: 00px 15px 0px 0px;
+  margin-right: 50px;
+  width: 100%;
+}
